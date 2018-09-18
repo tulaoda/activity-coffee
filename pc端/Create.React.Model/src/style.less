@@ -1,0 +1,100 @@
+// @import "../node_modules/antd/dist/antd.less";
+body {
+    background-color: #f0f2f5;
+}
+::-webkit-scrollbar-track-piece {
+    width: 6px;
+    background-color: #bfbfbf;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(123, 123, 123);
+    cursor: pointer
+}
+
+/* 过度动画 */
+
+.fade-enter {
+    opacity: 0;
+    animation-duration: .2s;
+    animation-fill-mode: both;
+    animation-timing-function: cubic-bezier(0.55, 0, 0.55, 0.2);
+    animation-play-state: paused;
+}
+
+.fade-appear {
+    opacity: 0;
+    animation-duration: .2s;
+    animation-fill-mode: both;
+    animation-timing-function: cubic-bezier(0.55, 0, 0.55, 0.2);
+    animation-play-state: paused;
+}
+
+.fade-leave {
+    animation-duration: .2s;
+    animation-fill-mode: both;
+    animation-timing-function: cubic-bezier(0.55, 0, 0.55, 0.2);
+    animation-play-state: paused;
+}
+
+.fade-enter.fade-enter-active {
+    animation-name: fadeIn;
+    animation-play-state: running;
+}
+
+.fade-appear.fade-appear-active {
+    animation-name: fadeIn;
+    animation-play-state: running;
+}
+
+.fade-leave.fade-leave-active {
+    animation-name: fadeOut;
+    animation-play-state: running;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+// 
+.table-header-search {
+    .ant-form-item {
+        display: flex;
+        margin: 0;
+    }
+    .ant-form-item-control-wrapper {
+        flex: 1;
+    }
+    .ant-col-6 {
+        // padding: 5px 0;
+    }
+    .table-header-btn{
+        text-align: right;
+    }
+}

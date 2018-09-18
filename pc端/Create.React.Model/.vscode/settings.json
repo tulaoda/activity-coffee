@@ -1,0 +1,4 @@
+{
+    "liveServer.settings.root": "./build/",
+    "npm-scripts.showStartNotification": false
+}

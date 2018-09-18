@@ -1,0 +1,31 @@
+{
+    "SubMenu": [
+        {
+            "Name": "测试",
+            "Icon": "menu-unfold",
+            "Meuu": [
+                {
+                    "Name": "富文本",
+                    "Path": "/editer",
+                    "Component": "editer"
+                },
+                {
+                    "Name": "Null",
+                    "Component": "editer"
+                }
+            ]
+        },
+        {
+            "Name": "测试2",
+            "Icon": "menu-fold",
+            "Meuu": []
+        },
+        {
+            "Name": "测试2",
+            "Icon": "pie-chart",
+            "Path": "/testa",
+            "Component": "testa",
+            "Meuu": []
+        }
+    ]
+}

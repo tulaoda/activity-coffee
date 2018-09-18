@@ -1,0 +1,67 @@
+.app-layout-root {
+    height: 100vh;
+    flex-direction: row;
+    .app-loadable-loading {
+        padding: 100px;
+        text-align: center;
+    }
+    .app-layout-sider {
+        height: 100%;
+        width: 80px;
+        transition: all 0.2s;
+        position: relative;
+        background: #001529;
+        position: relative;
+        .ant-menu-item>a {
+            display: inline-block;
+        }
+    }
+    .app-layout-logo {
+        height: 32px;
+        background: rgba(255, 255, 255, .2);
+        margin: 16px;
+        color: #fff;
+        text-align: center;
+        font-size: 20px;
+        line-height: 32px;
+    }
+    .app-layout-header {
+        background: #001529;
+        color: #fff;
+        padding: 0
+    }
+    .app-layout-body {
+        padding: 20px;
+        overflow: auto;
+    }
+    .app-layout-breadcrumb {
+        margin: 0 0 16px 0;
+    }
+    .app-layout-content {
+        background: #fff;
+        padding: 24px;
+        margin: 0;
+    }
+}
+
+.app-login {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/assets/svg/background.svg);
+    background-repeat: no-repeat;
+    background-position: center 110px;
+    background-size: 100%;
+    .app-login-form {
+        width: 400px;
+    }
+    .ant-tabs-nav-wrap {
+        text-align: center;
+    }
+    .antd-pro-login-submit {
+        display: block;
+        width: 100%;
+    }
+}

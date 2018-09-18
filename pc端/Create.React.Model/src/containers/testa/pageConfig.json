@@ -1,0 +1,230 @@
+{
+    "IdKey": "corpID",
+    "url": {
+        "get": "/corp",
+        "post": "/corp",
+        "put": "/corp",
+        "delete": "/corp/",
+        "details": "/corp/"
+    },
+    "table": [
+        {
+            "type": "string",
+            "description": "公司ID",
+            "allowEmptyValue": false,
+            "minLength": 5,
+            "maxLength": 5,
+            "key": "corpID",
+            "show": true,
+            "title": "公司ID",
+            "dataIndex": "corpID"
+        },
+        {
+            "type": "string",
+            "description": "管理員ID",
+            "allowEmptyValue": true,
+            "minLength": 0,
+            "maxLength": 10,
+            "key": "managerID",
+            "show": true,
+            "title": "管理員ID",
+            "dataIndex": "managerID"
+        },
+        {
+            "type": "integer",
+            "format": "int32",
+            "description": "公司员工总数",
+            "allowEmptyValue": true,
+            "key": "corpEmpTotals",
+            "show": true,
+            "title": "公司员工总数",
+            "dataIndex": "corpEmpTotals"
+        },
+        {
+            "type": "string",
+            "description": "创建用户",
+            "allowEmptyValue": true,
+            "minLength": 0,
+            "maxLength": 10,
+            "key": "createUser",
+            "show": true,
+            "title": "创建用户",
+            "dataIndex": "createUser"
+        }
+    ],
+    "search": [
+        {
+            "name": "managerID",
+            "in": "query",
+            "description": "管理员ID",
+            "required": false,
+            "type": "string",
+            "key": "managerID",
+            "show": true
+        }
+    ],
+    "edit": [
+        {
+            "key": "corpID",
+            "show": true,
+            "description": "公司ID",
+            "rules": [
+                {
+                    "required": true,
+                    "message": "Please input your corpID!"
+                },
+                {
+                    "min": 5,
+                    "message": "min length 5!"
+                },
+                {
+                    "max": 5,
+                    "message": "max length 5!"
+                }
+            ],
+            "type": "string",
+            "allowEmptyValue": false,
+            "minLength": 5,
+            "maxLength": 5
+        },
+        {
+            "key": "corpName",
+            "show": true,
+            "description": "公司名",
+            "rules": [
+                {
+                    "min": 0,
+                    "message": "min length 0!"
+                },
+                {
+                    "max": 50,
+                    "message": "max length 50!"
+                }
+            ],
+            "type": "string",
+            "allowEmptyValue": true,
+            "minLength": 0,
+            "maxLength": 50
+        },
+        {
+            "key": "managerID",
+            "show": true,
+            "description": "管理員ID",
+            "rules": [
+                {
+                    "min": 0,
+                    "message": "min length 0!"
+                },
+                {
+                    "max": 10,
+                    "message": "max length 10!"
+                }
+            ],
+            "type": "string",
+            "allowEmptyValue": true,
+            "minLength": 0,
+            "maxLength": 10
+        },
+        {
+            "key": "parentCorpID",
+            "show": true,
+            "description": "上級公司ID",
+            "rules": [
+                {
+                    "min": 0,
+                    "message": "min length 0!"
+                },
+                {
+                    "max": 5,
+                    "message": "max length 5!"
+                }
+            ],
+            "type": "string",
+            "allowEmptyValue": true,
+            "minLength": 0,
+            "maxLength": 5
+        },
+        {
+            "key": "corpEmpTotals",
+            "show": true,
+            "description": "公司员工总数",
+            "rules": [],
+            "type": "integer",
+            "format": "int32",
+            "allowEmptyValue": true
+        },
+        {
+            "key": "useYN",
+            "show": true,
+            "description": "使用与否",
+            "rules": [
+                {
+                    "required": true,
+                    "message": "Please input your useYN!"
+                }
+            ],
+            "type": "string",
+            "allowEmptyValue": false,
+            "enum": [
+                "Y",
+                "N"
+            ]
+        },
+        {
+            "key": "createUser",
+            "show": true,
+            "description": "创建用户",
+            "rules": [
+                {
+                    "min": 0,
+                    "message": "min length 0!"
+                },
+                {
+                    "max": 10,
+                    "message": "max length 10!"
+                }
+            ],
+            "type": "string",
+            "allowEmptyValue": true,
+            "minLength": 0,
+            "maxLength": 10
+        },
+        {
+            "key": "createDate",
+            "show": true,
+            "description": "创建日期",
+            "rules": [],
+            "type": "string",
+            "format": "date-time",
+            "allowEmptyValue": true
+        },
+        {
+            "key": "updateUser",
+            "show": true,
+            "description": "修改用户",
+            "rules": [
+                {
+                    "min": 0,
+                    "message": "min length 0!"
+                },
+                {
+                    "max": 10,
+                    "message": "max length 10!"
+                }
+            ],
+            "type": "string",
+            "allowEmptyValue": true,
+            "minLength": 0,
+            "maxLength": 10
+        },
+        {
+            "key": "updateDate",
+            "show": true,
+            "description": "修改日期",
+            "rules": [],
+            "type": "string",
+            "format": "date-time",
+            "allowEmptyValue": true
+        }
+    ]
+}
